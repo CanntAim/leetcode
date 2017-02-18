@@ -21,11 +21,10 @@ class Solution(object):
                 for_attachment_to_head = current.next
                 head.next = for_attachment_to_head
                 current.next = None
-                if(head.next is None):
+                if(head.next is None): # Opps! On even size you detach the mid point
                     head.next = for_attachment_to_head
                     for_attachment_to_head.next = None
                 elif(head.next.next is not None):
-                    print(head.next.next.val)
                     self.reorderList(head.next.next)
 
     def makeArrayFromList(self,head,array):
