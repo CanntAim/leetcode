@@ -15,6 +15,8 @@ class Solution(object):
         current = head
         if(current is not None):
             if(current.next is not None):
+                # This is a search for the last node but we can find it.
+                # by indexing it ones and finding it constant time afterward.
                 while(current.next.next is not None):
                     current = current.next
                 current.next.next = head.next
