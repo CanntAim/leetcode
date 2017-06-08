@@ -24,4 +24,4 @@ class Solution(object):
         array.append(element)
         return array
 
-print(Solution().subset_sum([10,11], 9))
+print(Solution().subset_sum([2,1,1,1], 3))
